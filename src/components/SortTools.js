@@ -4,7 +4,11 @@ export default class SortTools extends Component {
    sort(type) {
     const { update, data } = this.props;
 
-    const sortedBeers = [].slice.call(data).sort( (a, b) => b[type] - a[type] )
+    const sortedBeers = [].slice.call(data).sort(function(obj2, obj1) {
+      if(obj1[type] < obj2[type]) return 1;
+      if(obj1[type] > obj2[type]) return -1;
+      return 0;
+    });
 
     update({
       beers: sortedBeers
