@@ -15,12 +15,16 @@ const NavBar = ({ term, data, update }) => {
     });
   }
 
-  return <nav className="navbar navbar-light bg-light d-flex justify-content-between">
-    <form className="form-inline">
-      <input className="form-control mr-sm-2" type="search" placeholder="Search" onChange={dataSearch} aria-label="Search" />
+  return <nav className="navbar navbar-light bg-light d-flex justify-content-between flex-md-row flex-column align-items-center">
+    <form className="form-inline ">
+      <input className="form-control" type="search" placeholder="Search" onChange={dataSearch} aria-label="Search" />
     </form>
     
-    <button className="btn btn-primary" data-toggle="modal" data-target="#registrationModal">Зарегистрироваться</button>
+    <button className="btn btn-primary my-md-0 my-2 " 
+      data-toggle="modal" 
+      data-target="#registrationModal">
+      Зарегистрироваться
+    </button>
     <RegistrationForm />
   </nav>
 }

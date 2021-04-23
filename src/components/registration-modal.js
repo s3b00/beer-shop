@@ -72,8 +72,8 @@ const RegistrationForm = (props) => {
             <div className="modal-content">
             <div className="modal-header">
                 <h5 className="modal-title" id="exampleModalLabel">Регистрация</h5>
-                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div className="modal-body">
@@ -125,8 +125,8 @@ const RegistrationForm = (props) => {
                 </form>
             </div>
             <div className="modal-footer">
-                <button type="button" className="btn btn-secondary" data-dismiss="modal" id="closeButton">Close</button>
-                <button type="button" className="btn btn-primary" onClick={handleSubmit} >Save changes</button>
+                <button type="button" className="btn btn-secondary" data-dismiss="modal" id="closeButton">Закрыть</button>
+                <button type="button" className="btn btn-primary" onClick={handleSubmit} >Регистрация</button>
             </div>
             </div>
         </div>
